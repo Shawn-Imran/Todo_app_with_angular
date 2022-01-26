@@ -11,11 +11,11 @@
   <h3>Task List</h3>
   <br>
   <ul class="todoList" *ngFor="let item of list">
-    <li><p>{{item.name}}</p><button (click)="deleteTask(item.id)">Delete</button></li>
+    <li><div id="tlist"><div id="left">{{item.name}}</div><div id="right"><button (click)="deleteTask(item.id)">Delete</button></div></div></li>
   </ul>
   <br>
   <div class="foter">
-    <button class="clear" (click)="clearTasks()">clear All</button>
+    <button class="clear" (click)="clearTasks()">Clear All</button>
   </div>
 
   </div>
